@@ -13,6 +13,6 @@ jobs:
       - name: Add reviewers step
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: casox/Action-PR-Reviewers-Update@v1.0
+        uses: zenger-tester/Action-PR-Reviewers-Update
         with:
           reviewers: "@zenger-tester/game-dev"
