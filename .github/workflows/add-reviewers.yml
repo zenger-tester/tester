@@ -16,3 +16,4 @@ jobs:
         uses: zenger-tester/Action-PR-Reviewers-Update@v1.1
         with:
           reviewers: "@game-dev|game-dev|zenger-tester/game-dev|@zenger-tester/game-dev"
+          PAT: ${{ secrets.PAT }}
