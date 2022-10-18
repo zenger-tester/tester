@@ -4,15 +4,12 @@ on:
     types:
       - opened
 jobs:
-  hello_world_job:
-    runs-on: ubuntu-latest
-    name: Add reviewers
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Add reviewers step
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: casox/Action-PR-Reviewers-Update@v1.0
-        with:
-          reviewers: "@zenger-tester/game-dev"
+  call_me_may:
+    uses: zenger-tester/Action-PR-Reviewers-Update/.github/workflows/main.yml@main
+    with:
+        reviewers: "ZengerU"
+        reviewer-teams: "game-dev"
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      PAT: ${{ secrets.PAT }}
+          
