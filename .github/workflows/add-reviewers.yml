@@ -7,8 +7,8 @@ jobs:
   call_me_may:
     uses: zenger-tester/Action-PR-Reviewers-Update/.github/workflows/main.yml@main
     with:
-        reviewers: "ZengerU"
-        reviewer-teams: "game-dev"
+      reviewers: "ZengerU"
+      reviewer_teams: "game-dev"
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
       PAT: ${{ secrets.PAT }}
