@@ -1,8 +1,10 @@
 name: "Add Reviewers to PR"
 on:
-  pull_request
+  pull_request:
+    types:
+      - opened
 jobs:
-  call_me_maybe:
+  call_me_may:
     uses: zenger-tester/Action-PR-Reviewers-Update/.github/workflows/main.yml@main
     with:
         reviewers: "ZengerU"
