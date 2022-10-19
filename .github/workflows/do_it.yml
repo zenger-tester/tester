@@ -7,6 +7,7 @@ jobs:
     with:
       reviewers: "ZengerU"
       reviewer_teams: "game-dev"
+      path: "/home/runner/work/tester/tester"
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
       PAT: ${{ secrets.PAT }}
