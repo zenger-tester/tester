@@ -1,0 +1,11 @@
+name: "Add Reviewers to PR"
+on:
+  [pull_request]
+jobs:
+  call_me_may:
+    uses: zenger-tester/ReusableWorkflow/.github/workflows/main.yml@main
+    with:
+      reviewers: "ZengerU"
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+          
