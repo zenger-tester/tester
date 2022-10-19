@@ -6,7 +6,4 @@ jobs:
     uses: zenger-tester/ReusableWorkflow/.github/workflows/main.yml@main
     with:
       reviewer_teams: "game-dev"
-    secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
-      PAT: ${{ secrets.PAT }}
-          
+      
